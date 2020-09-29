@@ -1,19 +1,25 @@
 #include <stdio.h>
-int readValue = 0;
+#include <stdbool.h> //library für boolesche datentypen in c - true gibt 1 und fals gibt 0. 
 
+
+
+int readValue = 0;
+char writtenNumber[10][10] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
 
 int main(void)
 {
+    char writtenNumber[10][10] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
+
     while (true)
     {
         /* code */
 
         printf("Enter a number between (including) 0 and 9 to display the number as text. Enter 10 to stop the program: ");
-        scanf("%d", &readValue);
+        scanf("%i", &readValue);
 
         if (readValue > 10 || readValue < 0)
         {
-            printf("Invalid -> try again");
+            printf("Invalid -> try again\n");
         }
         else if (readValue == 10)
         {
@@ -23,7 +29,7 @@ int main(void)
         else
         {
 
-            printf("%d as text is %c", readValue, WrittenNumber);
+            printf("%i as text is %s\n", readValue, writtenNumber[readValue]);
         }
     }
 }
