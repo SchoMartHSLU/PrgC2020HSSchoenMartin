@@ -4,7 +4,7 @@
 
 
 int readValue = 0;
-char writtenNumber[10][10] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
+const char writtenNumber[10][10] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
 
 int main(void)
 {
