@@ -8,7 +8,6 @@ char writtenNumber[10][10] = {"zero","one","two","three","four","five","six","se
 
 int main(void)
 {
-    char writtenNumber[10][10] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
 
     while (true)
     {
